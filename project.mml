@@ -1,0 +1,109 @@
+{
+  "bounds": [
+    -180,
+    -85.0511,
+    180,
+    85.0511
+  ],
+  "center": [
+    27.8062,
+    47.198,
+    13
+  ],
+  "format": "png8",
+  "interactivity": false,
+  "minzoom": 0,
+  "maxzoom": 22,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss",
+    "osm"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      },
+      "status": "off"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        26.3420908,
+        45.4689968,
+        30.3639968,
+        48.4908125
+      ],
+      "id": "roads",
+      "class": "",
+      "Datasource": {
+        "file": "d:\\tmp_laptop_backup\\grm_gas\\osm\\roads.shp",
+        "id": "roads",
+        "project": "gas",
+        "srs": ""
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "roads",
+      "status": "off"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        27.7888186,
+        47.1716687,
+        27.8427856,
+        47.2345
+      ],
+      "id": "lines",
+      "class": "",
+      "Datasource": {
+        "file": "d:\\tmp_laptop_backup\\grm_gas\\lines.geojson",
+        "layer": "OGRGeoJSON",
+        "id": "lines",
+        "project": "gas",
+        "srs": ""
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "lines"
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        27.7995897,
+        47.1865851,
+        27.823253,
+        47.2157571
+      ],
+      "id": "points",
+      "class": "",
+      "Datasource": {
+        "file": "d:\\tmp_laptop_backup\\grm_gas\\points.geojson",
+        "layer": "OGRGeoJSON",
+        "id": "points",
+        "project": "gas",
+        "srs": ""
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "points"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "",
+  "description": "",
+  "attribution": ""
+}
