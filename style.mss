@@ -18,6 +18,18 @@ Map {
   marker-line-color:#813;
   marker-allow-overlap:false;
   marker-ignore-placement:true;
+  
+  [gas="meter"]
+    {
+    	[zoom<=16] { point-transform:"scale(.01)";}
+    	[zoom=17] { point-transform:"scale(.03)";}
+    	[zoom=18] { point-transform:"scale(.04)";}
+    	[zoom>18] { point-transform:"scale(.05)";}
+    	point-file: url(icons/bulb13.svg);
+    	marker-width:0;
+  		marker-fill:#f45;
+  		marker-line-color:#813;
+    }
 }
 
 

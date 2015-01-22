@@ -91,7 +91,7 @@
         "file": "d:\\harta\\points.geojson",
         "layer": "OGRGeoJSON",
         "id": "points",
-        "project": "gas",
+        "project": "gas-rules",
         "srs": ""
       },
       "layer": "OGRGeoJSON",
