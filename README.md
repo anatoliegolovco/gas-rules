@@ -1,3 +1,3 @@
 # gas-rules
 
-Reguli render pentru gaz
+Reguli render pentru gaz nu injur
