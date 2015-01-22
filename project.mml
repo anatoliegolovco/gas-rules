@@ -42,7 +42,7 @@
       "id": "roads",
       "class": "",
       "Datasource": {
-        "file": "d:\\tmp_laptop_backup\\grm_gas\\osm\\roads.shp",
+        "file": "d:\\harta\\roads.shp",
         "id": "roads",
         "project": "gas",
         "srs": ""
@@ -65,13 +65,13 @@
       "id": "lines",
       "class": "",
       "Datasource": {
-        "file": "d:\\tmp_laptop_backup\\grm_gas\\lines.geojson",
+        "file": "d:\\harta\\lines.geojson",
         "layer": "OGRGeoJSON",
         "id": "lines",
         "project": "gas",
         "srs": ""
       },
-      "layer": null,
+      "layer": "OGRGeoJSON",
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
@@ -88,13 +88,13 @@
       "id": "points",
       "class": "",
       "Datasource": {
-        "file": "d:\\tmp_laptop_backup\\grm_gas\\points.geojson",
+        "file": "d:\\harta\\points.geojson",
         "layer": "OGRGeoJSON",
         "id": "points",
         "project": "gas",
         "srs": ""
       },
-      "layer": null,
+      "layer": "OGRGeoJSON",
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
