@@ -65,6 +65,55 @@ Map {
   		marker-opacity: 0.75;
     }
   
+  [manhole="yes"]
+    {
+    	text-name: "'H'";
+    	text-placement: interior;
+  		text-fill: black;
+  		text-face-name: 'Arial Black';
+  		text-size: 10;
+  		marker-width:14;
+  		marker-fill:#fff;
+  		marker-line-color:#333;
+  		marker-allow-overlap: true;
+  		marker-placement: point;
+  		marker-opacity: 0.75;
+    }
+  
+  [fitting="reducer"]
+    {
+    	text-name: "'Ø '+[large]+ ' Ø ' +[small]";
+  		//text-placement: point;
+    	text-placement: interior;
+    	text-dy: -8;
+  		text-fill: black;
+  		text-face-name: 'Arial Black';
+  		text-size: 12;
+  		marker-width:10;
+  		marker-fill:#fff;
+  		marker-line-color:#333;
+  		marker-allow-overlap: true;
+  		marker-placement: point;
+  		marker-opacity: 0.75;
+    }
+  
+  [fitting="coupling"]
+    {
+    	text-name: "[ref]";
+  		//text-placement: point;
+    	text-placement: interior;
+    	text-dy: -8;
+  		text-fill: black;
+  		text-face-name: 'Arial Black';
+  		text-size: 10;
+  		marker-width:10;
+  		marker-fill:#fff;
+  		marker-line-color:#333;
+  		marker-allow-overlap: true;
+  		marker-placement: point;
+  		marker-opacity: 0.75;
+    }
+  
 }
 
 
