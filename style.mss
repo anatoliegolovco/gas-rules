@@ -11,7 +11,7 @@ Map {
   polygon-fill: #fff;
 }
 
-
+ 
 #points {
   marker-width:6;
   marker-fill:#f45;
@@ -34,20 +34,19 @@ Map {
 
 
 #lines {
-  line-width:1;
+  line-width:6;
   line-color:#168;
   [position="underground"]
     {
-    line-width:2;
-    
+    line-width:6;
+    line-dasharray: 8,6;
     }
 }
 
 #lines::outline {
-  line-width:3;
-  line-color:black;
   [position="underground"]
     {
-    line-dasharray: 3,3;
+    line-color:white;
+    line-width:4;
     }
 }
