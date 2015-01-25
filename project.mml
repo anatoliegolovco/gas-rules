@@ -17,7 +17,8 @@
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "style.mss",
-    "osm"
+    "osm",
+    "cadastre"
   ],
   "Layer": [
     {
@@ -32,27 +33,67 @@
       "status": "off"
     },
     {
-      "geometry": "linestring",
+      "geometry": "polygon",
       "extent": [
-        26.3420908,
-        45.4689968,
-        30.3639968,
-        48.4908125
+        27.760359250045145,
+        47.169485051710275,
+        27.82586799169802,
+        47.24002532596302
       ],
-      "id": "roads",
+      "id": "terenuri",
       "class": "",
       "Datasource": {
-        "file": "d:\\harta\\roads.shp",
-        "id": "roads",
-        "project": "gas",
+        "file": "d:\\harta\\terenuri.geojson",
+        "layer": "OGRGeoJSON"
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "terenuri"
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        27.76288771371311,
+        47.16981742917943,
+        27.825661995511254,
+        47.23983337352097
+      ],
+      "id": "cladiri",
+      "class": "",
+      "Datasource": {
+        "file": "d:\\harta\\cladiri.geojson",
+        "layer": "OGRGeoJSON"
+      },
+      "layer": null,
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "cladiri"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        27.764110471052483,
+        47.16956176607681,
+        27.825539093267263,
+        47.24008579150713
+      ],
+      "id": "axa",
+      "class": "",
+      "Datasource": {
+        "file": "d:\\harta\\axa.geojson",
+        "layer": "OGRGeoJSON",
+        "id": "axa",
+        "project": "gas-rules",
         "srs": ""
       },
       "layer": null,
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "roads",
-      "status": "off"
+      "name": "axa"
     },
     {
       "geometry": "linestring",
