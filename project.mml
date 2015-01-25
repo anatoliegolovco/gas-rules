@@ -115,7 +115,7 @@
       "Datasource": {
         "file": "d:\\harta\\lines.geojson",
         "id": "lines",
-        "project": "gas",
+        "project": "gas-rules",
         "srs": ""
       },
       "layer": "OGRGeoJSON",

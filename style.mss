@@ -82,7 +82,35 @@ Map {
   
   [fitting="reducer"]
     {
-    	text-name: "'Ø '+[large]+ ' Ø ' +[small]";
+    	point-file: url(icons/reducer-01.svg);
+        [zoom<=16] { point-transform:"scale(.05)";}
+    	[zoom=17] { point-transform:"scale(.1)";}
+    	[zoom=18] { point-transform:"scale(.15)";}
+    	[zoom>18] { point-transform:"scale(.20)";}
+        text-name: "'Ø '+[large]+ ' Ø ' +[small]";
+  		//text-placement: point;
+    	text-placement: interior;
+    	text-dy: -8;
+  		text-fill: black;
+  		text-face-name: 'Arial Black';
+  		text-size: 12;
+  		marker-width:10;
+  		marker-fill:#fff;
+  		marker-line-color:#333;
+  		marker-allow-overlap: true;
+  		marker-placement: point;
+  		marker-opacity: 0.75;
+    }
+
+  
+    [fitting="valve"]
+    {
+    	point-file: url(icons/robinet-01.svg);
+        [zoom<=16] { point-transform:"scale(.05)";}
+    	[zoom=17] { point-transform:"scale(.1)";}
+    	[zoom=18] { point-transform:"scale(.15)";}
+    	[zoom>18] { point-transform:"scale(.20)";}
+        text-name: "'Ø '+[large]+ ' Ø ' +[small]";
   		//text-placement: point;
     	text-placement: interior;
     	text-dy: -8;
@@ -130,12 +158,29 @@ Map {
     line-width:6;
     line-dasharray: 8,6;
     }
+
+  [presure="low"]
+    {
+  line-width:6;
+  line-color:#2C8924;
+    }
+    [presure="medium"]
+    {
+  line-width:6;
+  line-color:#D67D12;
+    }
+      [presure="high"]
+    {
+  line-width:6;
+  line-color:#CC0505;
+    }
+  
 }
 
 #lines::outline {
     [position="underground"]
     {
     line-color:white;
-    line-width:4;
+    line-width:2;
     }
 }
