@@ -22,29 +22,17 @@
   ],
   "Layer": [
     {
-      "id": "countries",
-      "name": "countries",
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "geometry": "polygon",
-      "Datasource": {
-        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
-        "type": "shape"
-      },
-      "status": "off"
-    },
-    {
       "geometry": "polygon",
       "extent": [
         27.760359250045145,
         47.169485051710275,
-        27.82586799169802,
+        27.825867991698022,
         47.24002532596302
       ],
       "id": "terenuri",
       "class": "",
       "Datasource": {
-        "file": "d:\\harta\\terenuri.geojson",
-        "layer": "OGRGeoJSON"
+        "file": "d:\\harta\\terenuri.geojson"
       },
       "layer": null,
       "srs-name": "autodetect",
@@ -63,8 +51,7 @@
       "id": "cladiri",
       "class": "",
       "Datasource": {
-        "file": "d:\\harta\\cladiri.geojson",
-        "layer": "OGRGeoJSON"
+        "file": "d:\\harta\\cladiri.geojson"
       },
       "layer": null,
       "srs-name": "autodetect",
@@ -84,7 +71,6 @@
       "class": "",
       "Datasource": {
         "file": "d:\\harta\\axa.geojson",
-        "layer": "OGRGeoJSON",
         "id": "axa",
         "project": "gas-rules",
         "srs": ""
@@ -107,7 +93,6 @@
       "class": "",
       "Datasource": {
         "file": "d:\\harta\\lines.geojson",
-        "layer": "OGRGeoJSON",
         "id": "lines",
         "project": "gas",
         "srs": ""
@@ -123,14 +108,13 @@
       "extent": [
         27.7995897,
         47.1865851,
-        27.823253,
+        27.823253000000005,
         47.2157571
       ],
       "id": "points",
       "class": "",
       "Datasource": {
         "file": "d:\\harta\\points.geojson",
-        "layer": "OGRGeoJSON",
         "id": "points",
         "project": "gas-rules",
         "srs": ""
