@@ -1,3 +1,5 @@
+@truba: 6;
+
 Map {
   background-color: transparent;
 }
@@ -33,7 +35,7 @@ Map {
     	text-name: "'M'";
     	text-placement: interior;
   		text-fill: black;
-  		text-face-name: 'Arial Black';
+  		text-face-name: 'Arial Bold';
   		text-size: 10;
   		marker-width:14;
   		marker-fill:#fff;
@@ -43,29 +45,13 @@ Map {
   		marker-opacity: 0.75;
     }
   
-  [fitting="endcap"]
-    {
-    	text-name: "'Ø xxx'";
-  		//text-placement: point;
-    	text-placement: interior;
-    	text-dy: -8;
-  		text-fill: black;
-  		text-face-name: 'Arial Black';
-  		text-size: 8;
-  		marker-width:10;
-  		marker-fill:#fff;
-  		marker-line-color:#333;
-  		marker-allow-overlap: true;
-  		marker-placement: point;
-  		marker-opacity: 0.75;
-    }
   
   [manhole="yes"]
     {
     	text-name: "'H'";
     	text-placement: interior;
   		text-fill: black;
-  		text-face-name: 'Arial Black';
+  		text-face-name: 'Arial Bold';
   		text-size: 10;
   		marker-width:14;
   		marker-fill:#fff;
@@ -84,10 +70,10 @@ Map {
     	[zoom>18] { point-transform:"scale(.20)";}
         text-name: "'Ø '+[large]+ ' Ø ' +[small]";
   		//text-placement: point;
-    	text-placement: interior;
-    	text-dy: -8;
+        text-placement: interior;
+    	text-dy: -20;
   		text-fill: black;
-  		text-face-name: 'Arial Black';
+  		text-face-name: 'Arial Bold';
   		text-size: 12;
   		marker-width:10;
   		marker-fill:#fff;
@@ -97,6 +83,49 @@ Map {
   		marker-opacity: 0.75;
     }
 
+    [fitting="endcap"]
+    {
+    	point-file: url(icons/endcap-01.svg);
+        [zoom<=16] { point-transform:"scale(.05)";}
+    	[zoom=17] { point-transform:"scale(.1)";}
+    	[zoom=18] { point-transform:"scale(.15)";}
+    	[zoom>18] { point-transform:"scale(.20)";}
+        text-name: "[ref]+' Ø'+[diameter]";
+  		//text-placement: point;
+        text-placement: interior;
+    	text-dy: -20;
+  		text-fill: black;
+  		text-face-name: 'Arial Bold';
+  		text-size: 12;
+  		marker-width:10;
+  		marker-fill:#fff;
+  		marker-line-color:#333;
+  		marker-allow-overlap: true;
+  		marker-placement: point;
+  		marker-opacity: 0.75;
+    }
+
+     [fitting="tee"]
+    {
+    	point-file: url(icons/tee-01.svg);
+        [zoom<=16] { point-transform:"scale(.05)";}
+    	[zoom=17] { point-transform:"scale(.1)";}
+    	[zoom=18] { point-transform:"scale(.15)";}
+    	[zoom>18] { point-transform:"scale(.20)";}
+        text-name: "[ref]";
+  		//text-placement: point;
+        text-placement: interior;
+    	text-dy: -20;
+  		text-fill: black;
+  		text-face-name: 'Arial Bold';
+  		text-size: 12;
+  		marker-width:10;
+  		marker-fill:#fff;
+  		marker-line-color:#333;
+  		marker-allow-overlap: true;
+  		marker-placement: point;
+  		marker-opacity: 0.75;
+    } 
   
  [fitting="valve"]
     {
@@ -105,12 +134,12 @@ Map {
     	[zoom=17] { point-transform:"scale(.1)";}
     	[zoom=18] { point-transform:"scale(.15)";}
     	[zoom>18] { point-transform:"scale(.20)";}
-        text-name: "'Ø '+[large]+ ' Ø ' +[small]";
+        text-name: "[ref]";
   		//text-placement: point;
     	text-placement: interior;
-    	text-dy: -8;
+    	text-dy: -20;
   		text-fill: black;
-  		text-face-name: 'Arial Black';
+  		text-face-name: 'Arial Bold';
   		text-size: 12;
   		marker-width:10;
   		marker-fill:#fff;
@@ -123,23 +152,23 @@ Map {
   [fitting="coupling"]
     {
     	point-file: url(icons/coupling.svg);
-        [zoom<=16] { point-transform:"scale(.15)";}
-    	[zoom=17] { point-transform:"scale(.25)";}
-    	[zoom=18] { point-transform:"scale(.35)";}
-    	[zoom>18] { point-transform:"scale(.45)";}
-        text-name: "[ref]";
+        [zoom<=16] { point-transform:"scale(.05)";}
+    	[zoom=17] { point-transform:"scale(.1)";}
+    	[zoom=18] { point-transform:"scale(.15)";}
+    	[zoom>18] { point-transform:"scale(.20)";}
+        text-name: "[ref]+' Ø'+[diameter]";
   		//text-placement: point; 
     	text-placement: interior;
-    	text-dy: -8;
+    	text-dy: -20;
   		text-fill: black;
-  		text-face-name: 'Arial Black';
+  		text-face-name: 'Arial Bold';
   		text-size: 10;
   		//marker-width:10;
   		//marker-fill:#fff;
   		//marker-line-color:#333;
   		marker-allow-overlap: true;
   		marker-placement: point;
-  		marker-opacity: 1;
+  		marker-opacity: 0.75;
     }
 }
 
@@ -148,6 +177,10 @@ Map {
   line-width:6;
   line-color:#168;
   
+  [diameter <= "40"] { line-width:@truba - 3;}
+  [diameter >= "40"] { line-width:@truba - 1;}
+  //[diameter > "99"] { line-width:@truba + 1;}
+  
   [position="underground"]
     {
     line-width:6;
@@ -155,17 +188,17 @@ Map {
 
   [presure="low"]
     {
-  		line-width:6;
+  		//line-width:6;
   		line-color:#2C8924;
     }
   [presure="medium"]
     {
-  		line-width:6;
+  		//line-width:6;
   		line-color:#D67D12;
     }
   [presure="high"]
     {
-  		line-width:6;
+  		//line-width:6;
   		line-color:#CC0505;
     }
 }
