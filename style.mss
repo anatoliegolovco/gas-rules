@@ -1,8 +1,3 @@
-
-
-
-
-
 Map {
   background-color: transparent;
 }
@@ -103,7 +98,7 @@ Map {
     }
 
   
-    [fitting="valve"]
+ [fitting="valve"]
     {
     	point-file: url(icons/robinet-01.svg);
         [zoom<=16] { point-transform:"scale(.05)";}
@@ -146,41 +141,40 @@ Map {
   		marker-placement: point;
   		marker-opacity: 1;
     }
-  
 }
 
 
 #lines {
   line-width:6;
   line-color:#168;
+  
   [position="underground"]
     {
     line-width:6;
-    line-dasharray: 8,6;
     }
 
   [presure="low"]
     {
-  line-width:6;
-  line-color:#2C8924;
+  		line-width:6;
+  		line-color:#2C8924;
     }
-    [presure="medium"]
+  [presure="medium"]
     {
-  line-width:6;
-  line-color:#D67D12;
+  		line-width:6;
+  		line-color:#D67D12;
     }
-      [presure="high"]
+  [presure="high"]
     {
-  line-width:6;
-  line-color:#CC0505;
+  		line-width:6;
+  		line-color:#CC0505;
     }
-  
 }
 
 #lines::outline {
     [position="underground"]
     {
-    line-color:white;
-    line-width:2;
+    	line-color:white;
+    	line-width:6;
+    	line-dasharray: 4,8;
     }
 }
