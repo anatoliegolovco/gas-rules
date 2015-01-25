@@ -9,10 +9,10 @@
 @rdz18_maj: 20;  @rdz18_med: 17;  @rdz18_min: 14;
 
 #terenuri {
-  line-color:#594;
+  line-color:#AFC4C6;
   line-width:0.5;
   polygon-opacity:1;
-  polygon-fill:#ae8;
+  polygon-fill:#D7FFDD;
 }
 
 
@@ -20,34 +20,46 @@
   line-color:#594;
   line-width:0.5;
   polygon-opacity:1;
-  polygon-fill:brown;
+  polygon-fill:#AFC4C6;
 }
+
+#cladiri::labels  [zoom>17]{
+
+  text-name: [NrCasa];
+  text-face-name: 'Arial Bold';
+  text-fill: #3C4647;
+  text-size: 10;
+  text-placement: interior;
+  text-halo-fill: #fff;
+  text-halo-radius:2;
+
+  }
 
 
 #axa {
 
   line-width:@rdz13_med + 2;
-  line-color:#fff;
+  line-color:#748A8C;
   
   [zoom=14]{
     line-width:@rdz14_med + 2;
-  	line-color:#000;
+  	line-color:#748A8C;
     }
     [zoom=15]{
     line-width:@rdz15_med + 2;
-  	line-color:#000;
+  	line-color:#748A8C;
     }
     [zoom=16]{
     line-width:@rdz16_med + 2;
-  	line-color:#000;
+  	line-color:#748A8C;
     }
     [zoom=17]{
     line-width:@rdz17_med + 2;
-  	line-color:#000;
+  	line-color:#748A8C;
     }
     [zoom=18]{
     line-width:@rdz18_med + 2;
-  	line-color:#000;
+  	line-color:#748A8C;
     }
   
 }
@@ -55,7 +67,7 @@
 #axa::outline{
 
   line-width: @rdz13_med;
-  line-color:#000;
+  line-color:#748A8C;
   
    [zoom=14]{
     line-width:@rdz14_med;
@@ -79,10 +91,12 @@
     }
 }
 
-#axa::labels{
+#axa_label{
   text-name: [StreetName];
-  text-face-name: 'Arial Black';
-  text-fill: #000;
+  text-face-name: 'Arial Bold';
+  text-fill: #3C4647;
   text-size: 10;
   text-placement: line;
+  text-halo-fill: #fff;
+  text-halo-radius:2;
 }

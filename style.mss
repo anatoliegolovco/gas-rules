@@ -21,7 +21,7 @@ Map {
   marker-width:6;
   marker-fill:#f45;
   marker-line-color:#813;
-  marker-allow-overlap:false;
+  marker-allow-overlap:true;
   marker-ignore-placement:true;
   
   [gas="meter"]
@@ -99,19 +99,24 @@ Map {
   
   [fitting="coupling"]
     {
-    	text-name: "[ref]";
-  		//text-placement: point;
+    	point-file: url(icons/coupling.svg);
+        [zoom<=16] { point-transform:"scale(.15)";}
+    	[zoom=17] { point-transform:"scale(.25)";}
+    	[zoom=18] { point-transform:"scale(.35)";}
+    	[zoom>18] { point-transform:"scale(.45)";}
+        text-name: "[ref]";
+  		//text-placement: point; 
     	text-placement: interior;
     	text-dy: -8;
   		text-fill: black;
   		text-face-name: 'Arial Black';
   		text-size: 10;
-  		marker-width:10;
-  		marker-fill:#fff;
-  		marker-line-color:#333;
+  		//marker-width:10;
+  		//marker-fill:#fff;
+  		//marker-line-color:#333;
   		marker-allow-overlap: true;
   		marker-placement: point;
-  		marker-opacity: 0.75;
+  		marker-opacity: 1;
     }
   
 }
@@ -128,7 +133,7 @@ Map {
 }
 
 #lines::outline {
-  [position="underground"]
+    [position="underground"]
     {
     line-color:white;
     line-width:4;

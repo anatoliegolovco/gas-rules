@@ -51,7 +51,10 @@
       "id": "cladiri",
       "class": "",
       "Datasource": {
-        "file": "d:\\harta\\cladiri.geojson"
+        "file": "d:\\harta\\cladiri.geojson",
+        "id": "cladiri",
+        "project": "gas-rules",
+        "srs": ""
       },
       "layer": null,
       "srs-name": "autodetect",
@@ -80,6 +83,24 @@
       "srs": "",
       "advanced": {},
       "name": "axa"
+    },
+    {
+      "geometry": "linestring",
+      "extent": [
+        27.764110471052483,
+        47.16956176607681,
+        27.825539093267263,
+        47.24008579150713
+      ],
+      "id": "axa_label",
+      "class": "",
+      "Datasource": {
+        "file": "d:\\harta\\axa.geojson"
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "axa_label"
     },
     {
       "geometry": "linestring",
