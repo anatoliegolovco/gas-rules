@@ -1,0 +1,20 @@
+﻿<presets>
+
+<group name="gaz">
+		<item name="reducer" type="node" preset_name_label="true">
+	            <label text="reducție"/>
+	            <space />
+	            <key key="fitting" value="reducer" />
+
+	    </item> <!-- reducer -->
+		
+		<item name="endcap" type="node" preset_name_label="true">
+	            
+	            <space />
+	            <key key="fitting" value="endcap" />
+
+	    </item> <!-- endcap -->
+
+	</group>		
+			
+</presets>
