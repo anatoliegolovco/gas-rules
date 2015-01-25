@@ -21,7 +21,7 @@ $(document).ready( function init(){
 
 		var gas = L.tileLayer('http://ots1.hartamd.com/tms.php?z={z}&x={x}&y={y}&db=gas', {
 			minZoom:0,
-			maxZoom: 17,
+			maxZoom: 22,
 			attribution: '&copy;',
 			tms: true
 		}).addTo(map);
