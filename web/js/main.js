@@ -19,7 +19,7 @@ $(document).ready( function init(){
 			tms: true
 		});
 
-		var ung = L.tileLayer('http://ots1.hartamd.com/tiles.php?z={z}&x={x}&y={y}&db=ung', {
+		var ung = L.tileLayer('http://ots1.hartamd.com/tms.php?z={z}&x={x}&y={y}&db=ung', {
 			minZoom:0,
 			maxZoom: 17,
 			attribution: '&copy; Dvelopment use only',
