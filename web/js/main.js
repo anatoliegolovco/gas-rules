@@ -17,6 +17,14 @@ $(document).ready( function init(){
 			attribution: '&copy; <a href="http://hartamd.com/">HartaMD.com</a>',
 			//subdomains: [1,2,3,4]
 			tms: true
+		});
+
+		var ung = L.tileLayer('http://ots1.hartamd.com/tiles.php?z={z}&x={x}&y={y}&db=ung', {
+			minZoom:0,
+			maxZoom: 17,
+			attribution: '&copy; Dvelopment use only',
+			//subdomains: [1,2,3,4]
+			tms: true
 		}).addTo(map);
 
 		var gas = L.tileLayer('http://ots1.hartamd.com/tms.php?z={z}&x={x}&y={y}&db=gas', {
@@ -27,6 +35,7 @@ $(document).ready( function init(){
 		}).addTo(map);
 		
 		var baseLayers = {
+			"Parcele": ung,
 			"New": beta,
 			"Old": basemap
 		};
