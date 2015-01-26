@@ -47,6 +47,7 @@ $(document).ready( function init(){
 		//add controls
 		var hash = new L.Hash(map);
 		L.control.locate().addTo(map);
+		L.Control.measureControl().addTo(map);
 		L.control.layers(baseLayers, overlays).addTo(map);
 
 	})
