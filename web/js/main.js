@@ -2,7 +2,7 @@ var map;
 
 $(document).ready( function init(){
 		
-		map = L.map('map').setView([47.01772, 28.87207], 8);
+		map = L.map('map').setView([47.2045,27.8154], 14);
 		
 		var basemap = L.tileLayer('http://bts{s}.hartamd.com/tiles/{z}/{x}/{y}.png', {
 			minZoom:0,
