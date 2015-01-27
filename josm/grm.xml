@@ -1,20 +1,179 @@
-﻿<presets>
+﻿<presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0">
 
-<group name="gaz">
-		<item name="reducer" type="node" preset_name_label="true">
-	            <label text="reducție"/>
+    <group
+		name="Gaz"
+		ru.name="Газ">
+		
+		<item
+			type="way" 
+			name="Țeavă"
+			ru.name="Труба">
+				<space />
+				<label
+					text="Țeavă de gaz"
+					ru.text="Газовая Труба"/>
+				<space />
+				<combo	key="presure" 
+						values="low,medium,high"
+						text="Presiune"
+						ru.text="Давление"/>
+				
+				<text 	key="diameter" 
+						text="Diametru" 
+						ru.text="Диаметр"/>
+				
+				<text 	key="material" 
+						text="Material" 
+						ru.text="Материал"/>	
+				
+				<key key="pipe" value="gas" />
+		</item>
+	
+		<item
+			name="Reducție"
+			ru.name="Редуктор"
+			type="node" 
+			preset_name_label="false">
+			
+				<space />
+				
+	            <label 	text="Reducție"
+						ru.text="Редуктор"/>
 	            <space />
+				
+				<text 	key="ref" 
+						text="Număr de referință" 
+						ru.text="Идентификационный номер"/>
+						
+				<text 	key="large" 
+						text="Diametrul mare" 
+						ru.text="Большой диаметр"/>
+						
+				<text 	key="small" 
+						text="Diametrul mic" 
+						ru.text="Малый диаметр"/>
+				
 	            <key key="fitting" value="reducer" />
 
 	    </item> <!-- reducer -->
 		
-		<item name="endcap" type="node" preset_name_label="true">
-	            
+		<item
+			name="Capac"
+			ru.name="Пробка"
+			type="node" 
+			preset_name_label="false">
+				
+				<space />
+				
+				<label
+					text="Capac"
+					ru.text="Пробка"/>
 	            <space />
-	            <key key="fitting" value="endcap" />
+				
+				<text 	key="diameter" 
+						text="Diametru" 
+						ru.text="Диаметр"/>
+	            
+				<text 	key="ref" 
+						text="Număr de referință" 
+						ru.text="Идентификационный номер"/>
+				
+				<key key="fitting" value="endcap" />
 
 	    </item> <!-- endcap -->
+		
+		<item
+			name="Contor"
+			ru.name="Счётчик"
+			type="node"
+			preset_name_label="false">
+			
+			<text 	key="ref" 
+						text="Număr de referință" 
+						ru.text="Идентификационный номер"/>
+			
+			<key key="gas" value="meter" />
+			
+		</item> <!-- meter -->
+		
+		<item
+			name="Sudură"
+			ru.name="Стык"
+			type="node" 
+			preset_name_label="false">
+				
+				<space />
+				
+				<label
+					text="Sudură"
+					ru.text="Стык"/>
+	            <space />
+				
+				<text 	key="diameter" 
+						text="Diametru" 
+						ru.text="Диаметр"/>
+	            
+				<text 	key="ref" 
+						text="Număr de referință" 
+						ru.text="Идентификационный номер"/>
+				
+				<key key="fitting" value="coupling" />
 
+	    </item> <!-- coupling -->
+		
+		<item
+			name="Teu"
+			ru.name="Тройник"
+			type="node" 
+			preset_name_label="false">
+			
+				<space />
+				
+	            <label 	text="Teu"
+						ru.text="Тройник"/>
+	            <space />
+				
+				<text 	key="ref" 
+						text="Număr de referință" 
+						ru.text="Идентификационный номер"/>
+						
+				<text 	key="large" 
+						text="Diametrul mare" 
+						ru.text="Большой диаметр"/>
+						
+				<text 	key="small" 
+						text="Diametrul mic" 
+						ru.text="Малый диаметр"/>
+				
+	            <key key="fitting" value="tee" />
+
+	    </item> <!-- tee -->
+		
+		<item
+			name="Robinet"
+			ru.name="Кран"
+			type="node" 
+			preset_name_label="false">
+				
+				<space />
+				
+				<label
+					text="Robinet"
+					ru.text="Кран"/>
+	            <space />
+				
+				<text 	key="diameter" 
+						text="Diametru" 
+						ru.text="Диаметр"/>
+	            
+				<text 	key="ref" 
+						text="Număr de referință" 
+						ru.text="Идентификационный номер"/>
+				
+				<key key="fitting" value="valve" />
+
+	    </item> <!-- valve -->
+		
 	</group>		
 			
 </presets>
