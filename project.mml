@@ -38,7 +38,8 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "terenuri"
+      "name": "terenuri",
+      "status": "off"
     },
     {
       "geometry": "polygon",
@@ -60,7 +61,8 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "cladiri"
+      "name": "cladiri",
+      "status": "off"
     },
     {
       "geometry": "linestring",
@@ -82,7 +84,8 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "axa"
+      "name": "axa",
+      "status": "off"
     },
     {
       "geometry": "linestring",
@@ -100,7 +103,8 @@
       "srs-name": "autodetect",
       "srs": "",
       "advanced": {},
-      "name": "axa_label"
+      "name": "axa_label",
+      "status": "off"
     },
     {
       "geometry": "linestring",

@@ -177,8 +177,8 @@ Map {
   line-width:6;
   line-color:#168;
   
-  [diameter <= "40"] { line-width:@truba - 3;}
-  [diameter >= "40"] { line-width:@truba - 1;}
+  //[diameter <= "40"] { line-width:@truba - 3;}
+  //[diameter >= "40"] { line-width:@truba - 1;}
   //[diameter > "99"] { line-width:@truba + 1;}
   
   [position="underground"]
