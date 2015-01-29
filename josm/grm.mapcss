@@ -1,0 +1,87 @@
+meta {
+    icon: "dialogs/mappaint/josm_small.png";
+}
+
+canvas {
+    default-points: true;
+	background-color: #6666cc;
+}
+
+
+/*************************/
+/* create style settings */
+/*************************/
+
+setting::hide_icons {
+  type: boolean;
+  label: tr("Hide icons at low zoom");
+  default: true;
+}
+
+setting::shrink_nodes {
+  type: boolean;
+  label: tr("Less obtrusive node symbols at low zoom");
+  default: true;
+}
+
+way[gas=pipe]
+{
+    width: 6;
+	
+	text: eval(concat("Ø", tag("diameter")));
+    text-position: line;
+    text-offset: 9;
+    font-size: 12;
+    font-color: lightyellow;
+}
+
+way[gas=pipe][presure=low]
+{
+    color: #2C8924;	
+}
+
+way[gas=pipe][presure=medium]
+{
+    color: #D67D12;
+}
+
+way[gas=pipe][presure=high]
+{
+    color: #CC0505;
+}
+
+way[gas=pipe][position=underground]
+{
+	dashes: 15,6;
+    dashes-background-color: #fff;
+}
+
+node[fitting=endcap] 
+{
+    icon-image: "img/endcap-01.svg";
+    text: auto;
+}
+
+node[fitting=reducer] 
+{
+    icon-image: "img/reducer-01.svg";
+    text: auto;
+}
+
+node[fitting=tee] 
+{
+    icon-image: "img/tee-01.svg";
+    text: auto;
+}
+
+node[fitting=valve] 
+{
+    icon-image: "img/robinet-01.svg";
+    text: auto;
+}
+
+node[fitting=coupling] 
+{
+    icon-image: "img/coupling.svg";
+    text: auto;
+}
