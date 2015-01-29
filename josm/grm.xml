@@ -25,6 +25,11 @@
 				<text 	key="material" 
 						text="Material" 
 						ru.text="Материал"/>	
+						
+				<combo	key="position" 
+						values="underground,aerial"
+						text="Poziție"
+						ru.text="Земля-Воздух"/>
 				
 				<key key="gas" value="pipe" />
 		</item>
